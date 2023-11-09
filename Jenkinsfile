@@ -26,7 +26,8 @@ pipeline{
         stage("Deploy"){
             steps{
                 echo "Deployin the docker Container"
-                sh "docker-compose down && docker-compose up -d" 
+                sh "docker-compose down && docker-compose up -d"
+                sh "docker image prune -f"
             }
         }
     }
