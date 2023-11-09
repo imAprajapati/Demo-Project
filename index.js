@@ -5,7 +5,6 @@ const port = 3000;
 
 
 app.get('/', async(req, res) => {
-  await client.set("name","jokhendra");
   res.send('Hello Everyone this is my first CICD project base on AWS Docker Jenkins');
 });
 
